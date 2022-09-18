@@ -1,0 +1,33 @@
+{% load static %}
+
+<!--doctype html-->
+<html lang='ko'>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="daldaguri's information"/> 
+
+    <meta name="author" content="daldaguri">
+    
+    <!--bootstrap-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+
+
+    <title>daldaguri</title>
+
+
+  </head>
+  <body id="menu-top">
+
+
+  <!--navigation-->
+  {% include "navbar.html" %}
+  <!--삽입될 내용-->
+  {% block content %}
+
+  {% endblock %}
+  <!--삽입될 내용 끝-->
+  <script src="{%static 'bootstrap.min.jc'%}"> </script> 
+  </body>
+</html>

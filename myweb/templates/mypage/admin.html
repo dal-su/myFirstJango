@@ -1,0 +1,11 @@
+<html>
+  {% for contact in contacts %}
+    <ul>
+      <li>이름: {{contact.name}}</li>
+      <li>메일: {{contact.email}}</li>
+      <li>폰번: {{contact.phone}}</li>
+      <li>메시지: {{contact.message}}</li>
+    </ul>
+    <hr />
+  {% endfor %}
+</html>
